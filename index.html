@@ -3,100 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Djigit — Разработка мобильных приложений с фокусом на ROI</title>
+    <title>Djigit — Федеральная IT-экспертиза из сердца Дагестана</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <header>
         <div class="container nav">
-            <div class="logo">DJIGIT</div>
-            <nav>
+            <div class="logo">DJIGIT<span>.it</span></div>
+            <nav class="desktop-nav">
+                <a href="#expertise">Экспертиза</a>
                 <a href="#cases">Кейсы</a>
-                <a href="#services">Услуги</a>
-                <a href="#process">Процесс</a>
+                <a href="#process">Метод</a>
+                <a href="#tech">Стек</a>
             </nav>
-            <a href="#contact" class="btn btn-outline">Обсудить проект</a>
+            <div class="header-actions">
+                <a href="tel:+79990000000" class="phone">8 (999) 000-00-00</a>
+                <a href="#contact" class="btn btn-outline">Обсудить ROI</a>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Section 1: Hero -->
+    <section class="hero-v2">
         <div class="container">
-            <h1>Разработка мобильных приложений с фокусом на <span>окупаемость (ROI)</span></h1>
-            <p class="subtitle">Для среднего и крупного бизнеса. С 2013 года запустили 300+ проектов. Внедряем ИИ для автоматизации вашего бизнеса.</p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Рассчитать стоимость</a>
-                <a href="#strategy" class="btn btn-secondary">Бесплатная консультация</a>
+            <div class="hero-content">
+                <div class="tag-line">Разработка с 2013 года • 300+ проектов</div>
+                <h1>Превращаем IT-разработку в <span>инструмент окупаемости (ROI)</span></h1>
+                <p class="hero-description">Разрабатываем мобильные приложения и сложные экосистемы для среднего и крупного бизнеса. Внедряем ИИ-ассистентов, чтобы вы автоматизировали рутину и масштабировались в 10 раз.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Рассчитать смету и окупаемость</a>
+                    <a href="#expertise" class="btn btn-secondary">Наши нишевые решения</a>
+                </div>
             </div>
-            <div class="hero-stats">
-                <div class="stat"><span>11 лет</span> на рынке</div>
-                <div class="stat"><span>300+</span> проектов</div>
-                <div class="stat"><span>35+</span> сфер бизнеса</div>
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num">11 лет</div>
+                    <div class="stat-text">глубокой экспертизы на рынке РФ и СНГ</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">300+</div>
+                    <div class="stat-text">успешно запущенных цифровых продуктов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">35+</div>
+                    <div class="stat-text">отраслей: от HoReCa до сложных SaaS</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="trust">
+    <!-- Section 2: Social Proof / Logos -->
+    <section class="logos-strip">
         <div class="container">
-            <p>Нам доверяют лидеры рынка:</p>
-            <div class="logos">
-                <div class="logo-item">Peretz Group</div>
-                <div class="logo-item">Капитал-Инвест</div>
-                <div class="logo-item">Благосфера</div>
-                <div class="logo-item">SARA</div>
+            <p class="section-label">Нам доверяют лидеры регионального и федерального рынка</p>
+            <div class="logos-wrapper">
+                <span class="partner-logo">Peretz Group</span>
+                <span class="partner-logo">Капитал-Инвест</span>
+                <span class="partner-logo">Благосфера</span>
+                <span class="partner-logo">Пятерочка (Регион)</span>
+                <span class="partner-logo">SARA</span>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- Section 3: The Pain / Why ROI? -->
+    <section class="pain-section">
         <div class="container">
-            <h2>Глубокая экспертиза в ваших задачах</h2>
-            <div class="service-grid">
-                <div class="service-card">
+            <div class="section-header">
+                <h2>Почему 80% мобильных приложений <span>не окупаются?</span></h2>
+                <p>IT-продукт без бизнес-аналитики — это «черная дыра» для бюджета. Мы решаем главные боли заказчиков:</p>
+            </div>
+            <div class="pains-grid">
+                <div class="pain-item">
+                    <i data-lucide="alert-circle"></i>
+                    <h4>Сложный интерфейс</h4>
+                    <p>Пользователи удаляют приложение, если оно неудобное. Мы проектируем UX под ваши бизнес-метрики.</p>
+                </div>
+                <div class="pain-item">
+                    <i data-lucide="dollar-sign"></i>
+                    <h4>Раздутые бюджеты</h4>
+                    <p>Разработка функций, которые никому не нужны. Мы начинаем с MVP и аналитики окупаемости.</p>
+                </div>
+                <div class="pain-item">
+                    <i data-lucide="clock"></i>
+                    <h4>Срыв сроков</h4>
+                    <p>В Djigit сроки зафиксированы в договоре. У нас нет оправданий, у нас есть результат.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Deep Expertise / Niches -->
+    <section id="expertise" class="expertise-v2">
+        <div class="container">
+            <div class="section-header">
+                <h2>Отраслевая экспертиза <span>Djigit</span></h2>
+                <p>Мы не просто пишем код, мы понимаем бизнес-процессы в ваших нишах.</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="exp-card">
+                    <div class="exp-icon"><i data-lucide="hotel"></i></div>
                     <h3>HoReCa & Отели</h3>
-                    <p>Системы лояльности, рост прямых бронирований и интеграция с PMS.</p>
+                    <ul>
+                        <li>Программы лояльности и кешбэк</li>
+                        <li>Интеграция с PMS (Shelter, Logus)</li>
+                        <li>Рост прямых бронирований на 25%+</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Благотворительность</h3>
-                    <p>Прозрачные сборы, отчетность и рекуррентные платежи для фондов.</p>
+                <div class="exp-card">
+                    <div class="exp-icon"><i data-lucide="heart"></i></div>
+                    <h3>Благотворительные фонды</h3>
+                    <ul>
+                        <li>Прозрачные системы рекуррентных платежей</li>
+                        <li>Личные кабинеты благотворителей</li>
+                        <li>Автоматизация финансовой отчетности</li>
+                    </ul>
                 </div>
-                <div class="service-card red">
-                    <h3>Flutter Development</h3>
-                    <p>iOS + Android за один бюджет. Экономия до 40% на разработке.</p>
-                </div>
-                <div class="service-card">
-                    <h3>ИИ Интеграции</h3>
-                    <p>Автоматизация поддержки и аналитики данных внутри вашего продукта.</p>
+                <div class="exp-card highlight">
+                    <div class="exp-icon"><i data-lucide="cpu"></i></div>
+                    <h3>AI & Автоматизация</h3>
+                    <ul>
+                        <li>Интеграция LLM (ChatGPT/Llama) в продукт</li>
+                        <li>ИИ-ассистенты для поддержки (24/7)</li>
+                        <li>Предиктивная аналитика продаж</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="cases" class="cases">
+    <!-- Section 5: The Method / Process -->
+    <section id="process" class="process-v2">
         <div class="container">
-            <h2>Наши кейсы</h2>
-            <div class="case-card">
-                <div class="case-info">
-                    <span class="tag">Mobile Focus</span>
-                    <h3>Peretz Group: Сеть ресторанов</h3>
-                    <p>Редизайн и запуск нового функционала за 3 месяца. Рост мобильных заказов на 30%.</p>
-                    <a href="#" class="link">Смотреть детали →</a>
+            <div class="section-header">
+                <h2>Как мы работаем <span>(Метод Djigit)</span></h2>
+                <p>Прозрачный процесс от идеи до масштабирования.</p>
+            </div>
+            <div class="timeline">
+                <div class="step">
+                    <div class="step-num">01</div>
+                    <div class="step-info">
+                        <h4>Аналитика и стратегия окупаемости</h4>
+                        <p>Изучаем ваш бизнес, конкурентов и считаем ROI перед написанием первой строки кода.</p>
+                    </div>
                 </div>
-                <div class="case-image"> [Mockup: Peretz App] </div>
+                <div class="step">
+                    <div class="step-num">02</div>
+                    <div class="step-info">
+                        <h4>Прототип и архитектура</h4>
+                        <p>Создаем детальный UX-прототип и выбираем стек (Flutter/Node.js) под ваши задачи.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">03</div>
+                    <div class="step-info">
+                        <h4>Разработка MVP</h4>
+                        <p>Запускаем первую версию продукта за 45-60 дней, чтобы вы начали получать фидбек от рынка.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">04</div>
+                    <div class="step-info">
+                        <h4>Релиз и сопровождение</h4>
+                        <p>Публикация в AppStore/Google Play и пожизненная гарантия на код.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="cta">
+    <!-- Section 6: Cases (Detailed) -->
+    <section id="cases" class="cases-v2">
         <div class="container">
-            <div class="cta-box">
-                <h2>Обсудим ваш следующий проект?</h2>
-                <p>Получите предварительную смету и план окупаемости за 24 часа.</p>
-                <form>
+            <div class="section-header">
+                <h2>Наши кейсы в деталях</h2>
+            </div>
+            <div class="case-large">
+                <div class="case-visual">
+                    <img src="https://images.unsplash.com/photo-1512428559083-a400a42d447a?auto=format&fit=crop&q=80&w=800" alt="Peretz App">
+                </div>
+                <div class="case-details">
+                    <span class="case-tag">Retail / FoodTech</span>
+                    <h3>Peretz Group: Революция в доставке</h3>
+                    <div class="case-metrics">
+                        <div class="metric"><span>+30%</span> заказов через приложение</div>
+                        <div class="metric"><span>-50%</span> нагрузка на колл-центр</div>
+                    </div>
+                    <p>Крупнейшая сеть ресторанов Дагестана нуждалась в полной переработке устаревшего приложения к Новому году. Мы успели за 90 дней.</p>
+                    <a href="#" class="btn btn-outline">Читать кейс полностью</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Tech Stack -->
+    <section id="tech" class="tech-section">
+        <div class="container">
+            <div class="tech-content">
+                <h2>Стек технологий будущего</h2>
+                <p>Мы выбираем инструменты, которые экономят ваши деньги и обеспечивают безопасность.</p>
+                <div class="tech-grid">
+                    <div class="tech-item"><strong>Flutter</strong> (Mobile)</div>
+                    <div class="tech-item"><strong>Node.js / Go</strong> (Backend)</div>
+                    <div class="tech-item"><strong>PostgreSQL / ClickHouse</strong> (Data)</div>
+                    <div class="tech-item"><strong>Docker / Kubernetes</strong> (DevOps)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Final CTA -->
+    <section id="contact" class="final-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-text">
+                    <h2>Готовы построить <span>лидерский продукт?</span></h2>
+                    <p>Оставьте заявку, и наш техлид подготовит предварительную смету и расчет ROI вашего проекта за 24 часа. Это бесплатно и ни к чему не обязывает.</p>
+                </div>
+                <form class="cta-form">
                     <input type="text" placeholder="Ваше имя" required>
-                    <input type="tel" placeholder="Телефон" required>
-                    <textarea placeholder="Коротко об идее"></textarea>
-                    <button type="submit" class="btn btn-primary">Отправить запрос</button>
+                    <input type="tel" placeholder="Номер телефона" required>
+                    <textarea placeholder="Опишите вашу идею или задачу"></textarea>
+                    <button type="submit" class="btn btn-primary">Получить расчет окупаемости</button>
+                    <p class="privacy-note">Нажимая кнопку, вы соглашаетесь с Политикой конфиденциальности.</p>
                 </form>
             </div>
         </div>
@@ -104,17 +235,36 @@
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="logo">DJIGIT</div>
-                    <p>Дагестан, Каспийск, ул. И.В. Сталина, д. 1</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">DJIGIT<span>.it</span></div>
+                    <p>IT-компания с фокусом на результат. Дагестан, Каспийск, ул. И.В. Сталина, д. 1</p>
                 </div>
-                <nav>
-                    <a href="#">Политика конфиденциальности</a>
-                </nav>
+                <div class="footer-links">
+                    <div class="link-col">
+                        <h5>Направления</h5>
+                        <a href="#">Мобильные приложения</a>
+                        <a href="#">Сложные CRM/ERP</a>
+                        <a href="#">Веб-сервисы</a>
+                    </div>
+                    <div class="link-col">
+                        <h5>Контакты</h5>
+                        <a href="mailto:info@djig-it.ru">info@djig-it.ru</a>
+                        <a href="https://t.me/djigit">Telegram</a>
+                    </div>
+                </div>
             </div>
-            <p class="copy">© 2026 ООО "Джигит". ИНН: 0554009093</p>
+            <div class="footer-bottom">
+                <p>© 2013-2026 ООО "Джигит". ИНН: 0554009093. ОГРН: 1220500006330</p>
+                <div class="legal">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
