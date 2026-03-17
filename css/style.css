@@ -173,12 +173,18 @@ header {
 
 .hero-v2 h1 {
     font-size: 64px;
-    line-height: 1.1;
+    line-height: 1.25;
     margin-bottom: 30px;
 }
 
-.hero-v2 h1 span {
-    color: var(--accent-red);
+.roi-tag {
+    background-color: var(--accent-red);
+    color: white;
+    padding: 0 15px;
+    border-radius: 8px;
+    display: inline-block;
+    transform: rotate(-2deg);
+    font-style: italic;
 }
 
 .hero-description {
